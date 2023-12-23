@@ -1,6 +1,6 @@
 // JavaScript para cargar el contenido del footer
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("../layouts/footer.html")
+  fetch("/layouts/footer.html")
     .then(response => response.text())
     .then(data => {
       document.querySelector("body").insertAdjacentHTML("beforeend", data);

@@ -1,6 +1,6 @@
 // JavaScript para cargar el contenido del navbar
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("../layouts/header.html")
+  fetch("/layouts/header.html")
     .then(response => response.text())
     .then(data => {
       document.querySelector("body").insertAdjacentHTML("afterbegin", data);
