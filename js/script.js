@@ -63,19 +63,6 @@ darkModeIcon.onclick = () => {
   document.body.classList.toggle('dark-mode');
 }
 
-/*================= scroll reveal =================*/
-ScrollReveal({ 
-  reset: true,
-  distance:'80px',
-  duration: 1500,
-  delay: 200
-});
-
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.services-container, .portafolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
-ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
-
 /*================= Multiple Text =================*/
 
 document.addEventListener('DOMContentLoaded', function () {
