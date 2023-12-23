@@ -4,36 +4,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/porNumero.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+  <link rel="shortcut icon" href="./img/icon.png">
+  <link rel="shortcut icon" href="../img/icon.png">
+  <title>Himnario App</title>
+
+  <!--swiper css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <!--box-icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<script src="./js/header.js"></script>
-<section>
-  <div class="card_numhim">
-    <h3 class="card-title">Número del Himno</h3>
-    <div class="calculator">
-      <div class="display-screen">
-          <div id="display"></div>
-      </div>
-      <div class="buttons">
-        <table>
-          <tr>
-            <td><button class="btn-number" id="7" onclick="addNumber(7)">7</button></td>
-            <td><button class="btn-number" id="8" onclick="addNumber(8)">8</button></td>
-            <td><button class="btn-number" id="9" onclick="addNumber(9)">9</button></td>
-            <td><button class="btn-number" id="4" onclick="addNumber(4)">4</button></td>
-            <td><button class="btn-number" id="5" onclick="addNumber(5)">5</button></td>
-            <td><button class="btn-number" id="6" onclick="addNumber(6)">6</button></td>
-            <td><button class="btn-number" id="1" onclick="addNumber(1)">1</button></td>
-            <td><button class="btn-number" id="2" onclick="addNumber(2)">2</button></td>
-            <td><button class="btn-number" id="3" onclick="addNumber(3)">3</button></td>
-            <td><button class="btn-delete" id="delete" onclick="deleteNumber()"><i class='bx bx-left-arrow-alt'></i></button></td>
-            <td><button class="btn-number" id="0" onclick="addNumber(0)">0</button></td>
-            <td rowspan="2"><button class="btn-search" id="search" onclick="searchHimno()"><i class='bx bx-search'></i></button></td>
-          </tr>
-        </table>
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img class="img-logo" src="./img/logonavbar.png" onerror="this.src='../img/logonavbar.png';" alt="">
+    </a>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Descargar App</a>
+      <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i>GitHub</a>
+    </nav>
+    
+    <div class="bx bx-sun" id="darkMode-icon"></div>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+  <section>
+    <div class="card_numhim">
+      <h3 class="card-title">Número del Himno</h3>
+      <div class="calculator">
+        <div class="display-screen">
+            <div id="display"></div>
+        </div>
+        <div class="buttons">
+          <table>
+            <tr>
+              <td><button class="btn-number" id="7" onclick="addNumber(7)">7</button></td>
+              <td><button class="btn-number" id="8" onclick="addNumber(8)">8</button></td>
+              <td><button class="btn-number" id="9" onclick="addNumber(9)">9</button></td>
+              <td><button class="btn-number" id="4" onclick="addNumber(4)">4</button></td>
+              <td><button class="btn-number" id="5" onclick="addNumber(5)">5</button></td>
+              <td><button class="btn-number" id="6" onclick="addNumber(6)">6</button></td>
+              <td><button class="btn-number" id="1" onclick="addNumber(1)">1</button></td>
+              <td><button class="btn-number" id="2" onclick="addNumber(2)">2</button></td>
+              <td><button class="btn-number" id="3" onclick="addNumber(3)">3</button></td>
+              <td><button class="btn-delete" id="delete" onclick="deleteNumber()"><i class='bx bx-left-arrow-alt'></i></button></td>
+              <td><button class="btn-number" id="0" onclick="addNumber(0)">0</button></td>
+              <td rowspan="2"><button class="btn-search" id="search" onclick="searchHimno()"><i class='bx bx-search'></i></button></td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<script src="./js/footer.js"></script>
+  </section>
+  <footer class="footer">
+    <span>© 2023.</span>
+    <div id="footerText">
+      <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
+      <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
+    </div>
+    <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i></a>
+  </footer>
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <!-- typed multiple text -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  
+  <!--swiper js-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!--custom js-->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
