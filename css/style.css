@@ -1,0 +1,333 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+
+  /*background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;*/
+}
+:root{
+  --bg-color: #000;
+  --text-color: #fdfdfd;
+  --shadow-color: rgba(255, 255, 255, 0.2);
+  --main-color: #F39C12;
+  --white-color: #fdfdfd;
+  --textport: #F2F4F4;
+  --colorport: rgba(36, 37, 38, .5);
+  --fondo: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.87));
+  --border-color: #1A202C;
+  --navfoot: rgba(0, 0, 0, .65);
+  --navfoot2: rgba(0, 0, 0, .88);
+}
+.dark-mode{
+  --bg-color: #fdfdfd;
+  --text-color: #101010;
+  --shadow-color: rgba(0,0,0,.2);
+  --main-color: #C70039;
+  --textport: #090909;
+  --colorport: rgba(246, 246, 246, 0.9);
+  --fondo: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.9));
+  --border-color: #E5E5E5;
+  --navfoot: rgba(255, 255, 255, .5);
+  --navfoot2: rgba(255, 255, 255, .8);
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body{
+  background: var(--bg-color);
+}
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 5%;
+  background: var(--navfoot);
+  backdrop-filter: blur(50px); 
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  transition: .5s;
+  border-bottom: 0.2px solid var(--border-color);
+}
+.header.sticky{
+  background: var(--bg-color);
+}
+.logo{
+  cursor: default;
+  margin-right: auto; /*para poner el navbar a la derecha*/
+}
+.img-logo{
+  width: 5rem;
+}
+.navbar a{
+  position: relative;
+  font-size: 1.7rem;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-right: 3.5rem;
+}
+.header .navbar a:hover{
+  color: var(--main-color);
+}
+.header .navbar a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: .2rem;
+  background: var(--main-color);
+}
+.header .navbar a:hover::before{
+  width: 100%;
+  transition: 1s ease;
+}
+.navbar .bx{
+  font-size: 2rem;
+  color: var(--text-color);
+  padding-right: 1rem;
+}
+#darkMode-icon{
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+.content{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(../img/imagen4.jpg);
+  background-size: cover;
+  background-position: center;
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 15rem;
+}
+.content:before{
+  z-index: 0;
+  content: '';
+  position: absolute;
+  background: var(--fondo);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.options{
+  display: block;
+  text-align: center;
+  z-index: 1;
+}
+.options h2{
+  font-size: 8rem;
+  font-family: 'Charm', cursive;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: -3rem;
+  color: var(--main-color);
+}
+.options p{
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+.search{
+  margin-top: 8rem;
+  border-spacing: 10px;
+}
+.search a {
+  padding: 1.5rem;
+  font-size: 2.2rem;
+  cursor: pointer;
+  background: rebeccapurple;
+  color: var(--white-color);
+  border-radius: 5px;
+  box-shadow: 20px 20px 45px rgba(0,0,0,0.5);
+}
+.search a:hover{
+  background: rgb(68, 28, 108);
+  cursor: pointer;
+}
+#porNum{
+  margin-right: 3rem;
+}
+.footer{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem 4%;
+  background: var(--navfoot);
+  backdrop-filter: blur(50px); 
+  border-top: 0.2px solid var(--border-color);
+  z-index: 3;
+}
+.footer span{
+  font-size: 1.6rem;
+  color: var(--text-color);
+  padding-right: 1rem;
+}
+#footerText p{
+  display: none;
+  opacity: 0;
+  animation: fadeInOut 4s ease-in-out infinite alternate;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+@keyframes fadeInOut {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+a .bx{
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+/* BREAKPOINTS*/
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 1024px) {
+  .header{
+    padding: 2rem 3%;
+  }
+}
+@media (max-width: 991px) {
+  .footer {
+    padding: 1.5rem 3%;
+  }
+}
+@media (max-width: 750px) {
+  #menu-icon {
+    display: block;
+    color: var(--text-color);
+  }
+  #darkMode-icon {
+    position: absolute;
+    right: 8rem;
+    font-size: 2.6rem;
+    margin-bottom: .1rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--navfoot2);
+    backdrop-filter: blur(50px); 
+    border-top: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: var(--text-color);
+  }
+  .navbar a:nth-child(1),
+  .navbar a:nth-child(2) {
+    color: var(--text-color);
+  }
+  .navbar a.active {
+    color: var(--main-color);
+  }
+  .navbar a::before {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .content{
+    padding-top: 24rem;
+  }
+  .search {
+    margin-top: 5rem;
+  }
+  .search a{
+    display: block;
+    padding: 2rem 0;
+    font-size: 3rem;
+  }
+  #porNum{
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 446px){
+  html {
+    font-size: 48%;
+  }
+  .options h2{
+    font-size: 7.3rem;
+  }
+  .content{
+    padding-top: 28rem;
+  }
+}
+@media (max-width: 400px){
+  html {
+    font-size: 45%;
+  }
+  #darkMode-icon {
+    right: 7rem;
+  }
+  .options h2{
+    font-size: 7rem;
+  }
+}
+@media (max-width: 314px){
+  .options h2{
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 916px) and (max-height: 429px) and (orientation: landscape) {
+  .content{
+    width: 100%;
+    height: 130vh;
+    padding-top: 7rem;
+  }
+  .options{
+    margin-bottom: 15rem;
+  }
+  .search{
+    margin-top: 4rem;
+  }
+}
