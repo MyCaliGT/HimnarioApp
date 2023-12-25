@@ -15,12 +15,6 @@
   top: 0;
   left: 0;
 }
-.card_options{
-  display: block;
-  text-align: center;
-  z-index: 1;
-  padding-top: 14rem;
-}
 .options_fixed {
   width: 100%;
   z-index: 2;
@@ -50,22 +44,30 @@
   border: 1.5px solid #1C62B9;
 }
 .himno_content{
+  display: block;
+  text-align: center;
   font-size: 2rem;
   color: var(--text-color);
-}
-.himnos_Xnombre{
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border-color);
   padding: 0.8rem;
 }
-.himnos_Xnombre:hover{
+.himno_content:hover{
   background: var(--colorport);
 }
-.card-body{
+.card_options{
+  z-index: 1;
+  padding-top: 14rem;
+}
+#himnos{
   margin-bottom: 10rem;
 }
 @media (max-width: 500px) {
   #buscar_himno{
     width: 90%;
+    height: 5.5rem;
+  }
+  .card_options{
+    padding-top: 16rem;
   }
 }
