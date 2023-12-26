@@ -4,27 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/boxicons.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/porNumero.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
   <link rel="shortcut icon" href="./img/icon.png">
-  <link rel="shortcut icon" href="../img/icon.png">
   <title>Himnario App</title>
-
-  <!--swiper css-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
   <!--box-icons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="manifest" href="./manifest.json">
 </head>
 <body>
   <header class="header">
@@ -77,16 +66,24 @@
     </div>
     <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i></a>
   </footer>
-  <!-- scroll reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
   
   <!-- typed multiple text -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   
-  <!--swiper js-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!--custom js-->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./regist_serviceWorker.js"></script>
+  <script>
+    $(function(){
+    //Precarga de la pagina se ejecuta solo una vez
+    setTimeout(
+      ()=>{
+        $(".cargando").hide(); 
+      } , 50
+    );
+    });
+  </script>
 </body>
 </html>

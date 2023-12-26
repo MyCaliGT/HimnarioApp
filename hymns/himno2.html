@@ -4,27 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/boxicons.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/himnos.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
-  <link rel="shortcut icon" href="./img/icon.png">
   <link rel="shortcut icon" href="../img/icon.png">
   <title>Himnario App</title>
 
-  <!--swiper css-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-
   <!--box-icons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="manifest" href="../manifest.json">
 </head>
 <body>
   <header class="header">
@@ -40,10 +29,11 @@
     <div class="bx bx-sun" id="darkMode-icon"></div>
 
     <div class="bx bx-menu" id="menu-icon"></div>
+    <link rel="manifest" href="../manifest.json">
   </header>
   <section class="resultContainer">
     <div class="result">
-      <h2 class="tituloletra">1 - CADA MOMENTO LA VIDA ME DA</h2>
+      <h2 class="tituloletra">2 - POR FE CONTEMPLO REDENCIÓN</h2>
       <span class="separators">1</span>
       <P>
         Por fe contemplo redención, La fuente carmesí; Jesús nos da la salvación, Su vida dió por mí.
@@ -51,7 +41,7 @@
       <span class="separators">CORO</span>
       <p>La fuente sin igual hallé, De vida y luz el manantial; ¡oh, gloria a Dios, me limpia a mí, Me limpia a mí, me limpia a mí.</p>
       <span class="separators">2</span>
-      <p>Mi vida entrego a mi Jesús, Las dudas Él quitó;Mi alma goza de su luz, Mis deudas Él pagó.</p>
+      <p>Mi vida entrego a mi Jesús, Las dudas Él quitó; Mi alma goza de su luz, Mis deudas Él pagó.</p>
       <span class="separators">3</span>
       <p>Cuán inefable gozo es, Saber que salvo soy; Mi Rey aquí es mi Jesús, Al reino sé que voy.</p>
       <span class="separators">4</span>
@@ -66,16 +56,24 @@
     </div>
     <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i></a>
   </footer>
-  <!-- scroll reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
   
   <!-- typed multiple text -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   
-  <!--swiper js-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!--custom js-->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="../js/script.js"></script>
+  <script src="../js/jquery-3.6.0.js"></script>
+  <script src="../regist_serviceWorker.js"></script>
+  <script>
+    $(function(){
+    //Precarga de la pagina se ejecuta solo una vez
+    setTimeout(
+      ()=>{
+        $(".cargando").hide(); 
+      } , 50
+    );
+    });
+  </script>
 </body>
 </html>
