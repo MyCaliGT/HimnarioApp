@@ -35,3 +35,20 @@ document.addEventListener('DOMContentLoaded', function () {
   // Configurar un intervalo para cambiar entre los textos cada 3 segundos
   setInterval(toggleText, 5000);
 });
+
+// Función para filtrar la lista
+function filtrarLista() {
+  var input = document.getElementById("buscar_himno").value.toLowerCase();
+  var listaElementos = document.getElementById("himnos");
+  var elementos = listaElementos.getElementsByTagName("a");
+
+  // Mostrar u ocultar elementos según el filtro
+  for (var i = 0; i < elementos.length; i++) {
+      var textoElemento = elementos[i].textContent.toLowerCase();
+      if (textoElemento.includes(input)) {
+          elementos[i].style.display = "";
+      } else {
+          elementos[i].style.display = "none";
+      }
+  }
+}

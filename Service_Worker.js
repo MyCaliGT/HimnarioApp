@@ -10,6 +10,7 @@ const CACHE_NAME = 'HimnarioApp',
     './css/porNumero.css',
     './css/boxicons.min.css',
     './js/script.js',
+    './js/number.js',
 
     './js/jquery-3.6.0.js',
 
