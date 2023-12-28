@@ -36,6 +36,9 @@
     font-size: 2.8rem;
   }
   .result .tituloletra{
-    font-size: 3.2rem;
+    font-size: 3rem;
+  }
+  .result .separators{
+    font-size: 2.6rem;
   }
 }
