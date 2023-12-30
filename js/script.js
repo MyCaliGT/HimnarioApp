@@ -52,3 +52,6 @@ function filtrarLista() {
       }
   }
 }
+window.addEventListener('pageshow', function(event) {
+  searchInput.value = '';
+});
