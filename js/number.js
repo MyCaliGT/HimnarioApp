@@ -21,7 +21,8 @@ function searchHimno() {
     if (isNaN(himnoNumber) || himnoNumber < 1 || himnoNumber > 400) {
       alert('Ingresa un número válido entre 1 y 400');
     } else {
-      window.location.href = `/hymns/himno${himnoInput}.html`;
+      const url = '/HimnarioApp/hymns/himno'+himnoInput+'.html';
+      window.location.href = url;
     }
   }
 }
