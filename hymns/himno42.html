@@ -1,74 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-<head> 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/boxicons.min.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/himnos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/himnos.css" />
 
-  <link rel="shortcut icon" href="../img/icon.png">
-  <title>Himnario App</title>
+    <link rel="shortcut icon" href="../img/icon.png" />
+    <title>Himnario App</title>
 
-  <!--box-icons-->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="manifest" href="../manifest.json">
-</head>
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img class="img-logo" src="./img/logonavbar.png" onerror="this.src='../img/logonavbar.png';" alt="">
-    </a>
+    <!--box-icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="../manifest.json" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          class="img-logo"
+          src="./img/logonavbar.png"
+          onerror="this.src='../img/logonavbar.png';"
+          alt=""
+        />
+      </a>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Descargar App</a>
-      <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i>GitHub</a>
-    </nav>
-    
-    <div class="bx bx-sun" id="darkMode-icon"></div>
+      <nav class="navbar">
+        <a href="#home" class="active">Descargar App</a>
+        <a href="https://github.com/MyCaliGT" target="_blank"
+          ><i class="bx bxl-github"></i>GitHub</a
+        >
+      </nav>
 
-    <div class="bx bx-menu" id="menu-icon"></div>
-  </header>
-  <section class="resultContainer">
-    <div class="result">
-      <h2 class="tituloletra">42 - EL ANHELO DEL CRISTIANO</h2>
-      <span class="separators">1</span>
-      <p>Vivir en el pecado, yo no quiero ya más, Prefiero santidad y salvación y luz y paz; Vivir en el pecado, pues, es cosa tan atroz, Que viene y nos separa de la comunión con Dios; Quiero triunfar, no quiero más pecar.</p>
-      <span class="separators">2</span>
-      <p>Oír la voz que viene de mi Padre Celestial,Es algo como un manso y cristalino manantial; Andar por sus senderos, es andar en plena luz, La luz que nos fue dada en la persona de Jesús, Eterno Dios, quiero escuchar tu voz.</p>
-      <span class="separators">3</span>
-      <p>Salir de las tinieblas, es lo más trascendental, Pues ellas nos conducen solamente a hacer el mal; La vida con Jesús es tan sublime en realidad, Pues Él es vida eterna, salvación y santidad; Es la verdad, es vida y santidad.</p>
-      <span class="separators">4</span>
-      <p>Digamos, pues hermanos: "Yo no quiero más pecar", Prefiero con mi Cristo, por su senda caminar; Dejemos las envidias y los celos y el rencor, Unámonos en uno, con un mismo y santo amor; No más rencor, andemos en amor.</p>
-    </div>
-  </section>
-  <footer class="footer">
-    <span>© 2023.</span>
-    <div id="footerText">
-      <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
-      <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
-    </div>
-    <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i></a>
-  </footer>
-  
-  <!-- typed multiple text -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  
-  <!--custom js-->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="../js/script.js"></script>
-  <script src="../js/jquery-3.6.0.js"></script>
-  <script src="../regist_serviceWorker.js"></script>
-  <script>
-    $(function(){
-    //Precarga de la pagina se ejecuta solo una vez
-    setTimeout(
-      ()=>{
-        $(".cargando").hide(); 
-      } , 50
-    );
-    });
-  </script>
-</body>
+      <div class="bx bx-sun" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="resultContainer">
+      <div class="result">
+        <h2 class="tituloletra">42 - EL ANHELO DEL CRISTIANO</h2>
+        <span class="separators">1</span>
+        <p>
+          Vivir en el pecado, yo no quiero ya más, Prefiero santidad y salvación
+          y luz y paz; Vivir en el pecado, pues, es cosa tan atroz, Que viene y
+          nos separa de la comunión con Dios; Quiero triunfar, no quiero más
+          pecar.
+        </p>
+        <span class="separators">2</span>
+        <p>
+          Oír la voz que viene de mi Padre Celestial,Es algo como un manso y
+          cristalino manantial; Andar por sus senderos, es andar en plena luz,
+          La luz que nos fue dada en la persona de Jesús, Eterno Dios, quiero
+          escuchar tu voz.
+        </p>
+        <span class="separators">3</span>
+        <p>
+          Salir de las tinieblas, es lo más trascendental, Pues ellas nos
+          conducen solamente a hacer el mal; La vida con Jesús es tan sublime en
+          realidad, Pues Él es vida eterna, salvación y santidad; Es la verdad,
+          es vida y santidad.
+        </p>
+        <span class="separators">4</span>
+        <p>
+          Digamos, pues hermanos: "Yo no quiero más pecar", Prefiero con mi
+          Cristo, por su senda caminar; Dejemos las envidias y los celos y el
+          rencor, Unámonos en uno, con un mismo y santo amor; No más rencor,
+          andemos en amor.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <span>© 2024.</span>
+      <div id="footerText">
+        <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
+        <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
+      </div>
+      <a href="https://github.com/MyCaliGT" target="_blank"
+        ><i class="bx bxl-github"></i
+      ></a>
+    </footer>
+
+    <!-- typed multiple text -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--custom js-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../regist_serviceWorker.js"></script>
+    <script>
+      $(function () {
+        //Precarga de la pagina se ejecuta solo una vez
+        setTimeout(() => {
+          $(".cargando").hide();
+        }, 50);
+      });
+    </script>
+  </body>
 </html>

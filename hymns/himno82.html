@@ -1,74 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-<head> 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/boxicons.min.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/himnos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/himnos.css" />
 
-  <link rel="shortcut icon" href="../img/icon.png">
-  <title>Himnario App</title>
+    <link rel="shortcut icon" href="../img/icon.png" />
+    <title>Himnario App</title>
 
-  <!--box-icons-->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="manifest" href="../manifest.json">
-</head>
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img class="img-logo" src="./img/logonavbar.png" onerror="this.src='../img/logonavbar.png';" alt="">
-    </a>
+    <!--box-icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="../manifest.json" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          class="img-logo"
+          src="./img/logonavbar.png"
+          onerror="this.src='../img/logonavbar.png';"
+          alt=""
+        />
+      </a>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Descargar App</a>
-      <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i>GitHub</a>
-    </nav>
-    
-    <div class="bx bx-sun" id="darkMode-icon"></div>
+      <nav class="navbar">
+        <a href="#home" class="active">Descargar App</a>
+        <a href="https://github.com/MyCaliGT" target="_blank"
+          ><i class="bx bxl-github"></i>GitHub</a
+        >
+      </nav>
 
-    <div class="bx bx-menu" id="menu-icon"></div>
-  </header>
-  <section class="resultContainer">
-    <div class="result">
-      <h2 class="tituloletra"></h2>
-      <span class="separators">1</span>
-      <p></p>
-      <span class="separators">CORO</span>
-      <p></p>
-      <span class="separators">2</span>
-      <p></p>
-      <span class="separators">3</span>
-      <p></p>
-    </div>
-  </section>
-  <footer class="footer">
-    <span>© 2023.</span>
-    <div id="footerText">
-      <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
-      <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
-    </div>
-    <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i></a>
-  </footer>
-  
-  <!-- typed multiple text -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  
-  <!--custom js-->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="../js/script.js"></script>
-  <script src="../js/jquery-3.6.0.js"></script>
-  <script src="../regist_serviceWorker.js"></script>
-  <script>
-    $(function(){
-    //Precarga de la pagina se ejecuta solo una vez
-    setTimeout(
-      ()=>{
-        $(".cargando").hide(); 
-      } , 50
-    );
-    });
-  </script>
-</body>
+      <div class="bx bx-sun" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="resultContainer">
+      <div class="result">
+        <h2 class="tituloletra">82 - A LA SIEGA ACUDID</h2>
+        <span class="separators">1</span>
+        <p>
+          Somos obreros del Señor, La mies segamos con amor; Las nuevas damos de
+          la salvación, De Cristo al pecador. Hoy trabajamos por amor, A Cristo
+          nuestro Salvador; Que por nosotros vida dio, En el Calvario do murió.
+        </p>
+        <span class="separators">CORO</span>
+        <p>
+          A la siega acudid, el Maestro os llama, Todos deben trabajar tarde y
+          mañana; Corre el tiempo y jamás, Nunca, hermanos, volverá, Vamos,
+          todos, hoy a trabajar.
+        </p>
+        <span class="separators">2</span>
+        <p>
+          El evangelio predicad, A todo el mundo sin cesar; Y sin temor y con
+          lealtad, Hoy su bandera levantad. En nuestras manos Él confió, Esta
+          gran comisión de amor; Las nuevas dad, no vaciléis, Que la victoria
+          obtendréis.
+        </p>
+        <span class="separators">3</span>
+        <p>
+          Horas y días pasarán, El tiempo nunca volverá; Si no predicas a Jesús,
+          Tal vez no habrá oportunidad. Hoy es el día de salvación, El mundo
+          pereciendo está; ¡Oh!, no desprecies el honor, Que Cristo hoy te da.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <span>© 2024.</span>
+      <div id="footerText">
+        <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
+        <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
+      </div>
+      <a href="https://github.com/MyCaliGT" target="_blank"
+        ><i class="bx bxl-github"></i
+      ></a>
+    </footer>
+
+    <!-- typed multiple text -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--custom js-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../regist_serviceWorker.js"></script>
+    <script>
+      $(function () {
+        //Precarga de la pagina se ejecuta solo una vez
+        setTimeout(() => {
+          $(".cargando").hide();
+        }, 50);
+      });
+    </script>
+  </body>
 </html>

@@ -1,74 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
-<head> 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/boxicons.min.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/himnos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/himnos.css" />
 
-  <link rel="shortcut icon" href="../img/icon.png">
-  <title>Himnario App</title>
+    <link rel="shortcut icon" href="../img/icon.png" />
+    <title>Himnario App</title>
 
-  <!--box-icons-->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="manifest" href="../manifest.json">
-</head>
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img class="img-logo" src="./img/logonavbar.png" onerror="this.src='../img/logonavbar.png';" alt="">
-    </a>
+    <!--box-icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="../manifest.json" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          class="img-logo"
+          src="./img/logonavbar.png"
+          onerror="this.src='../img/logonavbar.png';"
+          alt=""
+        />
+      </a>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Descargar App</a>
-      <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i>GitHub</a>
-    </nav>
-    
-    <div class="bx bx-sun" id="darkMode-icon"></div>
+      <nav class="navbar">
+        <a href="#home" class="active">Descargar App</a>
+        <a href="https://github.com/MyCaliGT" target="_blank"
+          ><i class="bx bxl-github"></i>GitHub</a
+        >
+      </nav>
 
-    <div class="bx bx-menu" id="menu-icon"></div>
-  </header>
-  <section class="resultContainer">
-    <div class="result">
-      <h2 class="tituloletra">64 - ¡SALID VALIENTES BATALLONES!</h2>
-      <span class="separators">1</span>
-      <p>Salid valientes batallones de Israel, Cantad el triunfo y la victoria por la fe; ¡Oh, juventud que tu simiente está en Jesús, Eterna piedra de los siglos firme es! A grandes voces pregonemos con fervor; El Evangelio de justicia y santo amor; Que este mensaje por el mundo has de llevar, Las almas gimen por el yugo de Satán.</p>
-      <span class="separators">CORO</span>
-      <p>Las huestes del Señor salen triunfantes, A luchar contra Satán; Pues valientes se apresuran los soldados, Sus espadas a empuñar. Y aunque sangre de los mártires nos cueste, Pues regada ha sido ya, En los campos por do quiera ya anunciado, Siempre el Evangelio quedará.</p>
-      <span class="separators">2</span>
-      <p>Legión Celeste de los Ángeles de Luz, Serán ayuda a los soldados de Jesús; Y en la lucha magna, gloria de Jehová, Irá hasta el frente resguardando sin cesar. Y manifiesta luz del alba se verá, De retaguardia irá la gloria de Jehová; Cuando invocares a Jesús presto será, A responderte Jesús irá.</p>
-      <span class="separators">3</span>
-      <p>Marchad valientes a luchar contra Satán, Oh, juventud sin vacilar avanza ya; La voz guerrera que resuene por doquier, Que pelees por Jesús es tu deber. Se imitador de aquellos hombres del ayer, Y el enemigo humillado quedará, Como Josué, por la gracia y por la fe, A su mandato el Sol obedeció.</p>
-    </div>
-  </section>
-  <footer class="footer">
-    <span>© 2023.</span>
-    <div id="footerText">
-      <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
-      <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
-    </div>
-    <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i></a>
-  </footer>
-  
-  <!-- typed multiple text -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  
-  <!--custom js-->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="../js/script.js"></script>
-  <script src="../js/jquery-3.6.0.js"></script>
-  <script src="../regist_serviceWorker.js"></script>
-  <script>
-    $(function(){
-    //Precarga de la pagina se ejecuta solo una vez
-    setTimeout(
-      ()=>{
-        $(".cargando").hide(); 
-      } , 50
-    );
-    });
-  </script>
-</body>
+      <div class="bx bx-sun" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="resultContainer">
+      <div class="result">
+        <h2 class="tituloletra">64 - ¡SALID VALIENTES BATALLONES!</h2>
+        <span class="separators">1</span>
+        <p>
+          Salid valientes batallones de Israel, Cantad el triunfo y la victoria
+          por la fe; ¡Oh, juventud que tu simiente está en Jesús, Eterna piedra
+          de los siglos firme es! A grandes voces pregonemos con fervor; El
+          Evangelio de justicia y santo amor; Que este mensaje por el mundo has
+          de llevar, Las almas gimen por el yugo de Satán.
+        </p>
+        <span class="separators">CORO</span>
+        <p>
+          Las huestes del Señor salen triunfantes, A luchar contra Satán; Pues
+          valientes se apresuran los soldados, Sus espadas a empuñar. Y aunque
+          sangre de los mártires nos cueste, Pues regada ha sido ya, En los
+          campos por do quiera ya anunciado, Siempre el Evangelio quedará.
+        </p>
+        <span class="separators">2</span>
+        <p>
+          Legión Celeste de los Ángeles de Luz, Serán ayuda a los soldados de
+          Jesús; Y en la lucha magna, gloria de Jehová, Irá hasta el frente
+          resguardando sin cesar. Y manifiesta luz del alba se verá, De
+          retaguardia irá la gloria de Jehová; Cuando invocares a Jesús presto
+          será, A responderte Jesús irá.
+        </p>
+        <span class="separators">3</span>
+        <p>
+          Marchad valientes a luchar contra Satán, Oh, juventud sin vacilar
+          avanza ya; La voz guerrera que resuene por doquier, Que pelees por
+          Jesús es tu deber. Se imitador de aquellos hombres del ayer, Y el
+          enemigo humillado quedará, Como Josué, por la gracia y por la fe, A su
+          mandato el Sol obedeció.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <span>© 2024.</span>
+      <div id="footerText">
+        <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
+        <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
+      </div>
+      <a href="https://github.com/MyCaliGT" target="_blank"
+        ><i class="bx bxl-github"></i
+      ></a>
+    </footer>
+
+    <!-- typed multiple text -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--custom js-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../regist_serviceWorker.js"></script>
+    <script>
+      $(function () {
+        //Precarga de la pagina se ejecuta solo una vez
+        setTimeout(() => {
+          $(".cargando").hide();
+        }, 50);
+      });
+    </script>
+  </body>
 </html>

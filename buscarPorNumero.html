@@ -1,90 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
-<head> 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/boxicons.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/porNumero.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/boxicons.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/porNumero.css" />
 
-  <link rel="shortcut icon" href="./img/icon.png">
-  <title>Himnario App</title>
+    <link rel="shortcut icon" href="./img/icon.png" />
+    <title>Himnario App</title>
 
-  <!--box-icons-->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="manifest" href="./manifest.json">
-</head>
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img class="img-logo" src="./img/logonavbar.png" onerror="this.src='../img/logonavbar.png';" alt="">
-    </a>
+    <!--box-icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="./manifest.json" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          class="img-logo"
+          src="./img/logonavbar.png"
+          onerror="this.src='../img/logonavbar.png';"
+          alt=""
+        />
+      </a>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Descargar App</a>
-      <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i>GitHub</a>
-    </nav>
-    
-    <div class="bx bx-sun" id="darkMode-icon"></div>
+      <nav class="navbar">
+        <a href="#home" class="active">Descargar App</a>
+        <a href="https://github.com/MyCaliGT" target="_blank"
+          ><i class="bx bxl-github"></i>GitHub</a
+        >
+      </nav>
 
-    <div class="bx bx-menu" id="menu-icon"></div>
-  </header>
-  <section>
-    <div class="card_numhim">
-      <h3 class="card-title">Número del Himno</h3>
-      <div class="calculator">
-        <div class="display-screen">
+      <div class="bx bx-sun" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section>
+      <div class="card_numhim">
+        <h3 class="card-title">Número del Himno</h3>
+        <div class="calculator">
+          <div class="display-screen">
             <div id="display"></div>
-        </div>
-        <div class="buttons">
-          <table>
-            <tr>
-              <td><button class="btn-number" id="7" onclick="addNumber(7)">7</button></td>
-              <td><button class="btn-number" id="8" onclick="addNumber(8)">8</button></td>
-              <td><button class="btn-number" id="9" onclick="addNumber(9)">9</button></td>
-              <td><button class="btn-number" id="4" onclick="addNumber(4)">4</button></td>
-              <td><button class="btn-number" id="5" onclick="addNumber(5)">5</button></td>
-              <td><button class="btn-number" id="6" onclick="addNumber(6)">6</button></td>
-              <td><button class="btn-number" id="1" onclick="addNumber(1)">1</button></td>
-              <td><button class="btn-number" id="2" onclick="addNumber(2)">2</button></td>
-              <td><button class="btn-number" id="3" onclick="addNumber(3)">3</button></td>
-              <td><button class="btn-delete" id="delete" onclick="deleteNumber()"><i class='bx bx-left-arrow-alt'></i></button></td>
-              <td><button class="btn-number" id="0" onclick="addNumber(0)">0</button></td>
-              <td rowspan="2"><button class="btn-search" id="search" onclick="searchHimno()"><i class='bx bx-search'></i></button></td>
-            </tr>
-          </table>
+          </div>
+          <div class="buttons">
+            <table>
+              <tr>
+                <td>
+                  <button class="btn-number" id="7" onclick="addNumber(7)">
+                    7
+                  </button>
+                </td>
+                <td>
+                  <button class="btn-number" id="8" onclick="addNumber(8)">
+                    8
+                  </button>
+                </td>
+                <td>
+                  <button class="btn-number" id="9" onclick="addNumber(9)">
+                    9
+                  </button>
+                </td>
+                <td>
+                  <button class="btn-number" id="4" onclick="addNumber(4)">
+                    4
+                  </button>
+                </td>
+                <td>
+                  <button class="btn-number" id="5" onclick="addNumber(5)">
+                    5
+                  </button>
+                </td>
+                <td>
+                  <button class="btn-number" id="6" onclick="addNumber(6)">
+                    6
+                  </button>
+                </td>
+                <td>
+                  <button class="btn-number" id="1" onclick="addNumber(1)">
+                    1
+                  </button>
+                </td>
+                <td>
+                  <button class="btn-number" id="2" onclick="addNumber(2)">
+                    2
+                  </button>
+                </td>
+                <td>
+                  <button class="btn-number" id="3" onclick="addNumber(3)">
+                    3
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="btn-delete"
+                    id="delete"
+                    onclick="deleteNumber()"
+                  >
+                    <i class="bx bx-left-arrow-alt"></i>
+                  </button>
+                </td>
+                <td>
+                  <button class="btn-number" id="0" onclick="addNumber(0)">
+                    0
+                  </button>
+                </td>
+                <td rowspan="2">
+                  <button
+                    class="btn-search"
+                    id="search"
+                    onclick="searchHimno()"
+                  >
+                    <i class="bx bx-search"></i>
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <span>© 2023.</span>
-    <div id="footerText">
-      <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
-      <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
-    </div>
-    <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i></a>
-  </footer>
-  
-  <!-- typed multiple text -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  
-  <!--custom js-->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/number.js"></script>
-  <script src="./js/jquery-3.6.0.js"></script>
-  <script src="./regist_serviceWorker.js"></script>
-  <script>
-    $(function(){
-    //Precarga de la pagina se ejecuta solo una vez
-    setTimeout(
-      ()=>{
-        $(".cargando").hide(); 
-      } , 50
-    );
-    });
-  </script>
-</body>
+    </section>
+    <footer class="footer">
+      <span>© 2024.</span>
+      <div id="footerText">
+        <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
+        <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
+      </div>
+      <a href="https://github.com/MyCaliGT" target="_blank"
+        ><i class="bx bxl-github"></i
+      ></a>
+    </footer>
+
+    <!-- typed multiple text -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--custom js-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/number.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./regist_serviceWorker.js"></script>
+    <script>
+      $(function () {
+        //Precarga de la pagina se ejecuta solo una vez
+        setTimeout(() => {
+          $(".cargando").hide();
+        }, 50);
+      });
+    </script>
+  </body>
 </html>

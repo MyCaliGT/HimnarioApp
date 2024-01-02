@@ -1,82 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
-<head> 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/boxicons.min.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/himnos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/himnos.css" />
 
-  <link rel="shortcut icon" href="../img/icon.png">
-  <title>Himnario App</title>
+    <link rel="shortcut icon" href="../img/icon.png" />
+    <title>Himnario App</title>
 
-  <!--box-icons-->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="manifest" href="../manifest.json">
-</head>
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img class="img-logo" src="./img/logonavbar.png" onerror="this.src='../img/logonavbar.png';" alt="">
-    </a>
+    <!--box-icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="../manifest.json" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          class="img-logo"
+          src="./img/logonavbar.png"
+          onerror="this.src='../img/logonavbar.png';"
+          alt=""
+        />
+      </a>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Descargar App</a>
-      <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i>GitHub</a>
-    </nav>
-    
-    <div class="bx bx-sun" id="darkMode-icon"></div>
+      <nav class="navbar">
+        <a href="#home" class="active">Descargar App</a>
+        <a href="https://github.com/MyCaliGT" target="_blank"
+          ><i class="bx bxl-github"></i>GitHub</a
+        >
+      </nav>
 
-    <div class="bx bx-menu" id="menu-icon"></div>
-  </header>
-  <section class="resultContainer">
-    <div class="result">
-      <h2 class="tituloletra">63 - BRILLE O NO EL SOL</h2>
-      <span class="separators">1</span>
-      <p>Brille o no el sol, verano o invierno sea, Recorre la montaña, el soto, el llano; Cual Cristo la palabra en Galilea, Sembrar es tu misión, si eres cristiano.</p>
-      <span class="separators">2</span>
-      <p>Siembra doquiera la verdad divina, Siémbrala con afanes, con dolores; Que al soplo del Espíritu germina, Planta que al cielo da frutos y flores.</p>
-      <span class="separators">3</span>
-      <p>Quizás alguna vez tu planta herida, Sientas por las espinas del sendero; ¿No ves con ellas de Jesús ceñida, La frente augusta en el fatal madero?</p>
-      <span class="separators">4</span>
-      <p>Siembra, no temas, en la peña dura, Deja en la roca estéril caer el grano; Que suele hallar la gracia una hendidura En el granito del orgullo humano.</p>
-      <span class="separators">5</span>
-      <p>En las arenas siembra, en el desierto, Donde el rocío suave no descienda; Tú animarás el corazón ya muerto, Con esa vida que tu amor encienda.</p>
-      <span class="separators">6</span>
-      <p>En la región de dudas y de penas, Donde del sol jamás llegó la llama; Esparce la semilla a manos llenas, Y fe y virtud y caridad derrama.</p>
-      <span class="separators">7</span>
-      <p>Siembra, que no te arredre el egoísmo, Siembra, do la impiedad blasfemias lanza, En el camino, el fango, en el abismo, Harás brotar la flor de la esperanza.</p>
-      <span class="separators">8</span>
-      <p>No importa, no, que el labrador sucumba, Antes que la simiente rompa el suelo; Que al despertar del sueño de la tumba, Su mies guardada ha de ser su anhelo.</p>
-    </div>
-  </section>
-  <footer class="footer">
-    <span>© 2023.</span>
-    <div id="footerText">
-      <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
-      <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
-    </div>
-    <a href="https://github.com/MyCaliGT" target="_blank"><i class="bx bxl-github"></i></a>
-  </footer>
-  
-  <!-- typed multiple text -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  
-  <!--custom js-->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="../js/script.js"></script>
-  <script src="../js/jquery-3.6.0.js"></script>
-  <script src="../regist_serviceWorker.js"></script>
-  <script>
-    $(function(){
-    //Precarga de la pagina se ejecuta solo una vez
-    setTimeout(
-      ()=>{
-        $(".cargando").hide(); 
-      } , 50
-    );
-    });
-  </script>
-</body>
+      <div class="bx bx-sun" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="resultContainer">
+      <div class="result">
+        <h2 class="tituloletra">63 - BRILLE O NO EL SOL</h2>
+        <span class="separators">1</span>
+        <p>
+          Brille o no el sol, verano o invierno sea, Recorre la montaña, el
+          soto, el llano; Cual Cristo la palabra en Galilea, Sembrar es tu
+          misión, si eres cristiano.
+        </p>
+        <span class="separators">2</span>
+        <p>
+          Siembra doquiera la verdad divina, Siémbrala con afanes, con dolores;
+          Que al soplo del Espíritu germina, Planta que al cielo da frutos y
+          flores.
+        </p>
+        <span class="separators">3</span>
+        <p>
+          Quizás alguna vez tu planta herida, Sientas por las espinas del
+          sendero; ¿No ves con ellas de Jesús ceñida, La frente augusta en el
+          fatal madero?
+        </p>
+        <span class="separators">4</span>
+        <p>
+          Siembra, no temas, en la peña dura, Deja en la roca estéril caer el
+          grano; Que suele hallar la gracia una hendidura En el granito del
+          orgullo humano.
+        </p>
+        <span class="separators">5</span>
+        <p>
+          En las arenas siembra, en el desierto, Donde el rocío suave no
+          descienda; Tú animarás el corazón ya muerto, Con esa vida que tu amor
+          encienda.
+        </p>
+        <span class="separators">6</span>
+        <p>
+          En la región de dudas y de penas, Donde del sol jamás llegó la llama;
+          Esparce la semilla a manos llenas, Y fe y virtud y caridad derrama.
+        </p>
+        <span class="separators">7</span>
+        <p>
+          Siembra, que no te arredre el egoísmo, Siembra, do la impiedad
+          blasfemias lanza, En el camino, el fango, en el abismo, Harás brotar
+          la flor de la esperanza.
+        </p>
+        <span class="separators">8</span>
+        <p>
+          No importa, no, que el labrador sucumba, Antes que la simiente rompa
+          el suelo; Que al despertar del sueño de la tumba, Su mies guardada ha
+          de ser su anhelo.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <span>© 2024.</span>
+      <div id="footerText">
+        <p id="firstText">Crafteado con el 💙 por Maycol Cali.</p>
+        <p id="secondText">Hecho con 😴 en la pandemia 🦠.</p>
+      </div>
+      <a href="https://github.com/MyCaliGT" target="_blank"
+        ><i class="bx bxl-github"></i
+      ></a>
+    </footer>
+
+    <!-- typed multiple text -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--custom js-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../regist_serviceWorker.js"></script>
+    <script>
+      $(function () {
+        //Precarga de la pagina se ejecuta solo una vez
+        setTimeout(() => {
+          $(".cargando").hide();
+        }, 50);
+      });
+    </script>
+  </body>
 </html>

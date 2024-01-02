@@ -30,3 +30,11 @@ function searchHimno() {
 function updateDisplay() {
   display.innerText = himnoInput;
 }
+
+function limpiarBusqueda() {
+  document.getElementById("display").value = "";
+}
+
+window.addEventListener('beforeunload', function() {
+  limpiarBusqueda();
+});

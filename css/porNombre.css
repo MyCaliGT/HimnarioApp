@@ -22,6 +22,7 @@
   background: var(--navfoot);
   backdrop-filter: blur(50px); 
   text-align: center;
+  margin-top: -.5rem;
 }
 .options_fixed .card-title{
   font-size: 2rem;

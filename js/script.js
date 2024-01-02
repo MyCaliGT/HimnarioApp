@@ -52,6 +52,11 @@ function filtrarLista() {
       }
   }
 }
-window.addEventListener('pageshow', function(event) {
-  searchInput.value = '';
+
+function limpiarBusqueda() {
+  document.getElementById("buscar_himno").value = "";
+}
+
+window.addEventListener('beforeunload', function() {
+  limpiarBusqueda();
 });
