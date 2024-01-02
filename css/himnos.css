@@ -22,7 +22,8 @@
 .result .tituloletra{
   color: var(--main-color);
   font-size: 2.3rem;
-  font-weight: 400; 
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 .result .separators{
   color:var(--main-color);
