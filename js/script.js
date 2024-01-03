@@ -57,7 +57,5 @@ var searchInput = document.getElementById('buscar_himno');
 
 window.addEventListener('pageshow', function(event) {
   searchInput.value = '';
-  if (event.persisted) {
-    window.location.reload();
-  }
+  window.location.reload();
 });
